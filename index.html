@@ -1515,5 +1515,5 @@ secs.forEach(s=>{
   },{threshold:.25}).observe(s);
 });
 </script>
-</body>
+<script>(function(){var _ou=window.updateHeaderSendBtn,_os=window.sendToSheets;function ge(){var el=document.getElementById('teilnehmer-email');return el?el.value.trim():'';}function eo(e){return e.length>3&&e.includes('@')&&e.includes('.');}window.updateHeaderSendBtn=function(){_ou();if(!eo(ge())){['header-send-btn','send-btn','send-btn-2'].forEach(function(id){var b=document.getElementById(id);if(b)b.disabled=true;});}};['collectDataM1','collectDataM2','collectDataM3','collectDataM4'].forEach(function(fn){if(!window[fn])return;var orig=window[fn];window[fn]=function(){var d=orig();d.email=ge();return d;};});window.sendToSheets=function(){var e=ge();if(!eo(e)){if(window.setStatus)setStatus('Bitte zuerst eine gültige E-Mail-Adresse eingeben.',false);return;}_os();};})();</script></body>
 </html>
