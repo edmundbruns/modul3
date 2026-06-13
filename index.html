@@ -374,6 +374,8 @@ select{width:100%;border:1px solid var(--abd);border-radius:10px;padding:8px 10p
 <div class="pillrow" style="margin-top:12px;gap:10px;align-items:center">
 <label for="teilnehmer-name" style="font-weight:600;color:#fff">Ihr Name:</label>
 <input id="teilnehmer-name" oninput="updateHeaderSendBtn()" placeholder="Vorname Nachname" style="padding:6px 12px;border-radius:6px;border:none;font-size:1rem;min-width:200px;background:#fff;color:#1a2340" type="text"/>
+  <label for="teilnehmer-email" style="font-weight:600;color:#fff">Ihre E-Mail:</label>
+  <input id="teilnehmer-email" type="email" placeholder="name@beispiel.de" style="padding:6px 12px;border-radius:6px;border:none;font-size:1rem;background:#fff;color:#1a2340">
 <button disabled="" id="header-send-btn" onclick="sendToSheets()" style="padding:6px 16px;border-radius:6px;border:none;background:#4caf50;color:#fff;font-size:.9rem;font-weight:700;cursor:not-allowed;opacity:.5;transition:opacity .2s">
       Jetzt senden</button>
 <span id="header-send-status" style="font-size:.8rem;color:#c8e6c9;margin-left:4px"></span>
