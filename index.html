@@ -1458,6 +1458,7 @@ function sendToSheets() {
   });
 
   const data = collectData();
+      data.email = document.getElementById('teilnehmer-email').value;
   fetch(WEBAPP_URL, {
     method: 'POST',
     body: JSON.stringify(data),
